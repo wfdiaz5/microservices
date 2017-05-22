@@ -1,0 +1,11 @@
+# Spring Cloud Basic Configurations
+# Property used into the application.properties in order to set a default configuration repository during the application
+# context phase
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wfdiaz5/config-repo.git
+server:
+  port: 9100
