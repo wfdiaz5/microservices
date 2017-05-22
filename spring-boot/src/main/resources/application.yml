@@ -1,0 +1,7 @@
+# Server settings
+# 1. No properties, we got an error if the port 8080 is being used.
+# 2. Define port for the app
+# 3. Define context
+server:
+  port: 9101
+  context-path: /labs/spring-boot/
