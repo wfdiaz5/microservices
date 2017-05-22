@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-client
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9100
+#  profiles:
+#    active: colombia
