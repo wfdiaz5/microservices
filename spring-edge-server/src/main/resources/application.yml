@@ -1,0 +1,37 @@
+server:
+  port: ${PORT:8765}
+
+info:
+  component: Zuul Edge Server
+
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+
+
+ribbon:
+  eureka:
+    enabled: true
+    ReadTimeout: 20000
+    ConnectTimeout: 20000
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+  ignoredServices: '*'
+  routes:
+    client:
+      path: /client/**
+      serviceId: SPRING-DISCOVERY-CLIENT
+
+management:
+  security:
+    enabled: false
+security:
+    basic:
+        enabled: false

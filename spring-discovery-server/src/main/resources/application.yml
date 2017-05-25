@@ -6,10 +6,29 @@ info:
 
 
 eureka:
+#  datacenter: DC1
+#  environment: local
+#  shouldUseDns: false
+
   client:
     registerWithEureka: false
-    fetchRegistry: false
-    server:
-      waitTimeInMsWhenSyncEmpty: 0
+    fetchRegistry: true
+    healthcheck:
+      enabled: true
+
+#  instance:
+#    statusPageUrlPath: ${management.context-path}/info
+#    healthCheckUrlPath: ${management.context-path}/health
+#    securePortEnabled: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    renewalPercentThreshold: 0.85
+    enableSelfPreservation: true
 
 
+management:
+  security:
+    enabled: false
+security:
+    basic:
+        enabled: false
