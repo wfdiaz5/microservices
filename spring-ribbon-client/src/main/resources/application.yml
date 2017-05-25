@@ -1,14 +1,22 @@
 server:
   port: 0
-  context-path: /labs/discovery-client/
-
-info:
-  component: Eureka Discovery Client
-
+  context-path: /labs/ribbon-client/
 
 management:
   security:
     enabled: false
+security:
+    basic:
+        enabled: false
+
+info:
+  component: Ribbon Client
+
+spring-discovery-client:
+  ribbon:
+    eureka:
+      enabled: true
+    ServerListRefreshInterval: 5000
 
 
 eureka:
