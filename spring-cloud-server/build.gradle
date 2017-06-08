@@ -26,6 +26,13 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
     compile('org.springframework.cloud:spring-cloud-config-server')
+    //Cloud Bus
+    compile('org.springframework.boot:spring-boot-actuator')
+    compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
+    // http://<config-server>/monitor endpoint for the Config Server to
+    // receive notification events when properties backed by Git
+    //compile('org.springframework.cloud:spring-cloud-config-monitor')
+    //compile('org.springframework.cloud:starter-stream-rabbit')
 }
 
 dependencyManagement {
