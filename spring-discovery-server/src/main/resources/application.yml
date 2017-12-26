@@ -12,7 +12,7 @@ eureka:
 
   client:
     registerWithEureka: false
-    fetchRegistry: true
+    fetchRegistry: false   #if this is true, you can see in the log communication issues
     healthcheck:
       enabled: true
 
