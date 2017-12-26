@@ -4,6 +4,6 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:9100
-#  profiles:
-#    active: colombia
+      uri: http://localhost:9200
+  profiles:
+    active: colombia

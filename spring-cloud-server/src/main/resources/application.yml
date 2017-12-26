@@ -8,4 +8,4 @@ spring:
         git:
           uri: https://github.com/wfdiaz5/config-repo.git
 server:
-  port: 9100
+  port: 9200
