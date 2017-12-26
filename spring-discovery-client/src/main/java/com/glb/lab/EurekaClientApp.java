@@ -13,10 +13,10 @@ import java.util.logging.Logger;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class Application {
+public class EurekaClientApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(EurekaClientApp.class, args);
     }
 
     @RequestMapping("/test")
