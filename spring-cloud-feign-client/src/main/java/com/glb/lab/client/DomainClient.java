@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient(value = "${service.server.name}", path = "${service.server.path}",
         url = "${service.server.url}")
-public interface TestClient {
+public interface DomainClient {
 
     @RequestMapping (path = "/info", method = RequestMethod.GET)
     String get();

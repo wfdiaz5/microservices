@@ -1,9 +1,9 @@
 server:
-  port: 9201
+  port: 9202
 
 #Restful Services
 service:
   server:
     name: http://spring-domain
     path: /domain/user
-    url: localhost:9202
+    url: localhost:9203

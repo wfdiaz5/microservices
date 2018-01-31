@@ -12,22 +12,10 @@ import java.util.logging.Logger;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@RestController
 public class EurekaClientApp {
 
     public static void main(String[] args) {
         SpringApplication.run(EurekaClientApp.class, args);
-    }
-
-    @RequestMapping("/test")
-    String ribbonTest() {
-        return "Hello World!";
-    }
-
-    @RequestMapping("/test/{name}")
-    String ribbonTest(@PathVariable String name) {
-        Logger.getAnonymousLogger().log(Level.INFO,"ribbonTest: {0}",name);
-        return new StringBuilder().append("Hello ").append(name).append("!").toString();
     }
 
 }
