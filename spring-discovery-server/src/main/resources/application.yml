@@ -11,7 +11,7 @@ eureka:
 #  shouldUseDns: false
 
   client:
-    registerWithEureka: false
+    registerWithEureka: false  #The Eureka server will not register itself as Client.
     fetchRegistry: false   #if this is true, you can see in the log communication issues
     healthcheck:
       enabled: true
